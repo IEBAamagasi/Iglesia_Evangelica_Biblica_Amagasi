@@ -552,18 +552,46 @@
             </div>
         </div>
         <div class="row">
-             <!-- Evento 1 -->
+
+            
+    <!-- Agrega este bloque de estilos en el <head> o en tu hoja de estilos principal -->
+<style>
+  /* Estilo para la imagen de fondo de cada evento */
+  .blog-entry .block-20 {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 200px; /* Altura para móviles */
+  }
+  /* Para pantallas medianas y grandes (computadoras) */
+  @media (min-width: 768px) {
+    .blog-entry {
+      display: flex;
+    }
+    .blog-entry .block-20 {
+      height: auto;        /* Permite que el contenedor se ajuste según el contenido */
+      min-height: 250px;    /* Altura mínima deseada en computadora (ajusta según necesites) */
+    }
+  }
+</style>
+
+<!-- Código HTML de la sección de eventos -->
+<section class="ftco-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center mb-5">
+        <!-- Actividades de Fe -->
+        <section id="explora-y-conecta"></section>
+      </div>
+    </div>
+    <div class="row">
+
+      <!-- Evento 1 -->
       <div class="col-md-12 d-flex ftco-animate mb-4">
-        <div class="blog-entry align-self-stretch d-md-flex" 
-             style="overflow: hidden; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        <div class="blog-entry align-self-stretch d-md-flex" style="overflow: hidden; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
           <!-- Imagen de fondo (enlace a forms opcional) -->
           <a href="#" class="block-20" 
-             style="background-image: url('images/event-1.jpg'); 
-                    background-size: cover; 
-                    background-position: center; 
-                    height: 100%; 
-                    width: 100%; 
-                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+             style="background-image: url('images/event-1.jpg'); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
           </a>
           <!-- Texto del evento -->
           <div class="text p-4 d-block">
@@ -602,15 +630,9 @@
 
       <!-- Evento 2 -->
       <div class="col-md-12 d-flex ftco-animate mb-4">
-        <div class="blog-entry align-self-stretch d-md-flex" 
-             style="overflow: hidden; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        <div class="blog-entry align-self-stretch d-md-flex" style="overflow: hidden; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
           <a href="#" class="block-20" 
-             style="background-image: url('images/event-2.jpg'); 
-                    background-size: cover; 
-                    background-position: center; 
-                    height: 100%; 
-                    width: 100%; 
-                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+             style="background-image: url('images/event-2.jpg'); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
           </a>
           <div class="text p-4 d-block">
             <h3 class="heading mb-4">
@@ -646,15 +668,9 @@
 
       <!-- Evento 3 -->
       <div class="col-md-12 d-flex ftco-animate mb-4">
-        <div class="blog-entry align-self-stretch d-md-flex" 
-             style="overflow: hidden; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        <div class="blog-entry align-self-stretch d-md-flex" style="overflow: hidden; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
           <a href="#" class="block-20" 
-             style="background-image: url('images/event-3.jpg'); 
-                    background-size: cover; 
-                    background-position: center; 
-                    height: 100%; 
-                    width: 100%; 
-                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+             style="background-image: url('images/event-3.jpg'); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
           </a>
           <div class="text p-4 d-block">
             <h3 class="heading mb-4">
@@ -821,6 +837,11 @@
     </div>
   </div>
 </div>
+ </div>
+  </div>
+</section>
+
+
 
    <section class="ftco-section-parallax">
     <div class="parallax-img d-flex align-items-center">
