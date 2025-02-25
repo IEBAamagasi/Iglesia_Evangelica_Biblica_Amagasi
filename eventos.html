@@ -158,30 +158,44 @@
       </div>
     </div>
 
+<!-- Agrega este bloque de estilos en el <head> o en tu hoja de estilos principal -->
+<style>
+  /* Estilo para la imagen de fondo de cada evento */
+  .blog-entry .block-20 {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 200px; /* Altura para móviles */
+  }
+  /* Para pantallas medianas y grandes (computadoras) */
+  @media (min-width: 768px) {
+    .blog-entry {
+      display: flex;
+    }
+    .blog-entry .block-20 {
+      height: auto;        /* Permite que el contenedor se ajuste según el contenido */
+      min-height: 250px;    /* Altura mínima deseada en computadora (ajusta según necesites) */
+    }
+  }
+</style>
+
+<!-- Código HTML de la sección de eventos -->
 <section class="ftco-section">
   <div class="container">
     <div class="row">
       <div class="col-md-12 text-center mb-5">
         <!-- Actividades de Fe -->
-    <section id="explora-y-conecta">
-    </section>
+        <section id="explora-y-conecta"></section>
       </div>
     </div>
     <div class="row">
 
-
       <!-- Evento 1 -->
       <div class="col-md-12 d-flex ftco-animate mb-4">
-        <div class="blog-entry align-self-stretch d-md-flex" 
-             style="overflow: hidden; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        <div class="blog-entry align-self-stretch d-md-flex" style="overflow: hidden; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
           <!-- Imagen de fondo (enlace a forms opcional) -->
           <a href="#" class="block-20" 
-             style="background-image: url('images/event-1.jpg'); 
-                    background-size: cover; 
-                    background-position: center; 
-                    height: 100%; 
-                    width: 100%; 
-                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+             style="background-image: url('images/event-1.jpg'); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
           </a>
           <!-- Texto del evento -->
           <div class="text p-4 d-block">
@@ -204,7 +218,6 @@
               y tuvimos presentaciones de diversos ministerios de estas congregaciones.
             </p>
             <p>
-
               <!-- Botón que abre el modal con más detalles -->
               <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#eventModal1">
                 Más Información
@@ -221,15 +234,9 @@
 
       <!-- Evento 2 -->
       <div class="col-md-12 d-flex ftco-animate mb-4">
-        <div class="blog-entry align-self-stretch d-md-flex" 
-             style="overflow: hidden; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        <div class="blog-entry align-self-stretch d-md-flex" style="overflow: hidden; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
           <a href="#" class="block-20" 
-             style="background-image: url('images/event-2.jpg'); 
-                    background-size: cover; 
-                    background-position: center; 
-                    height: 100%; 
-                    width: 100%; 
-                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+             style="background-image: url('images/event-2.jpg'); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
           </a>
           <div class="text p-4 d-block">
             <h3 class="heading mb-4">
@@ -265,15 +272,9 @@
 
       <!-- Evento 3 -->
       <div class="col-md-12 d-flex ftco-animate mb-4">
-        <div class="blog-entry align-self-stretch d-md-flex" 
-             style="overflow: hidden; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        <div class="blog-entry align-self-stretch d-md-flex" style="overflow: hidden; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
           <a href="#" class="block-20" 
-             style="background-image: url('images/event-3.jpg'); 
-                    background-size: cover; 
-                    background-position: center; 
-                    height: 100%; 
-                    width: 100%; 
-                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+             style="background-image: url('images/event-3.jpg'); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
           </a>
           <div class="text p-4 d-block">
             <h3 class="heading mb-4">
@@ -309,15 +310,9 @@
 
       <!-- Evento 4 -->
       <div class="col-md-12 d-flex ftco-animate mb-4">
-        <div class="blog-entry align-self-stretch d-md-flex" 
-             style="overflow: hidden; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        <div class="blog-entry align-self-stretch d-md-flex" style="overflow: hidden; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
           <a href="#" class="block-20" 
-             style="background-image: url('images/event-4.jpg'); 
-                    background-size: cover; 
-                    background-position: center; 
-                    height: 100%; 
-                    width: 100%; 
-                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+             style="background-image: url('images/event-4.jpg'); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
           </a>
           <div class="text p-4 d-block">
             <h3 class="heading mb-4">
@@ -352,15 +347,9 @@
 
       <!-- Evento 5 -->
       <div class="col-md-12 d-flex ftco-animate mb-4">
-        <div class="blog-entry align-self-stretch d-md-flex" 
-             style="overflow: hidden; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        <div class="blog-entry align-self-stretch d-md-flex" style="overflow: hidden; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
           <a href="#" class="block-20" 
-             style="background-image: url('images/event-5.jpg'); 
-                    background-size: cover; 
-                    background-position: center; 
-                    height: 100%; 
-                    width: 100%; 
-                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+             style="background-image: url('images/event-5.jpg'); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
           </a>
           <div class="text p-4 d-block">
             <h3 class="heading mb-4">
@@ -397,14 +386,13 @@
   </div>
 </section>
 
-
-<<!-- Modal 1: Encuentro de Jóvenes -->
+<!-- Modal 1: Encuentro de Jóvenes -->
 <div class="modal fade" id="eventModal1" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title">Encuentro de Jóvenes</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
@@ -416,13 +404,11 @@
           y crecer en la fe juntos. Asistieron miembros de varias iglesias, 
           y tuvimos presentaciones de diversos ministerios de estas congregaciones.
         </p>
-        
         <p><strong>Información Adicional:</strong></p>
         <ul>
           <li>Talleres interactivos, testimonios inspiradores y dinámicas de grupo</li>
           <li>Integración entre jóvenes de diferentes iglesias y ministerios</li>
         </ul>
-
         <p><strong>Recomendaciones:</strong></p>
         <ul>
           <li><strong>Llega temprano:</strong> Para socializar antes del programa</li>
@@ -430,7 +416,6 @@
           <li><strong>Participa activamente:</strong> Haz preguntas y comparte</li>
           <li><strong>Lleva cuaderno:</strong> Para anotar reflexiones importantes</li>
         </ul>
-        
         <p><em>¡Todos los jóvenes están invitados!</em></p>
       </div>
       <div class="modal-footer">
@@ -446,7 +431,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title">Retiros Espirituales</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
@@ -458,13 +443,11 @@
           duración de dos días y una noche. Cada retiro está diseñado para profundizar 
           en la fe y encontrar paz y renovación en medio de la rutina diaria.
         </p>
-
         <p><strong>Información Adicional:</strong></p>
         <ul>
           <li>Espacios para oración, meditación y actividades al aire libre</li>
           <li>Entornos naturales para conectar con la creación divina</li>
         </ul>
-
         <p><strong>Recomendaciones:</strong></p>
         <ul>
           <li><strong>Inscripción anticipada:</strong> Cupos limitados por fecha</li>
@@ -472,7 +455,6 @@
           <li><strong>Desconexión digital:</strong> Enfoque en crecimiento espiritual</li>
           <li><strong>Mente abierta:</strong> Participa en todas las actividades</li>
         </ul>
-        
         <p><em>Revisa fechas disponibles en el formulario de inscripción.</em></p>
       </div>
       <div class="modal-footer">
@@ -488,7 +470,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title">Celebración de Bautizos</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
@@ -500,20 +482,17 @@
           como para toda la comunidad. Es una oportunidad única para que los nuevos 
           creyentes expresen públicamente su fe y su decisión de seguir a Cristo.
         </p>
-
         <p><strong>Información Adicional:</strong></p>
         <ul>
           <li>Incluye testimonios y momentos de oración memorables</li>
           <li>Celebración comunitaria con familias y amigos</li>
         </ul>
-
         <p><strong>Recomendaciones:</strong></p>
         <ul>
           <li><strong>Consulta previa:</strong> Coordina requisitos con líderes</li>
           <li><strong>Involucra familia:</strong> Comparte este momento especial</li>
           <li><strong>Preparación espiritual:</strong> Asiste a sesiones previas</li>
         </ul>
-        
         <p><em>Si deseas bautizarte, comunícate con nosotros para más detalles.</em></p>
       </div>
       <div class="modal-footer">
@@ -529,7 +508,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title">Torneo de Fútbol</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
@@ -541,13 +520,11 @@
           oportunidad para fomentar el compañerismo y la actividad física en 
           nuestra comunidad.
         </p>
-
         <p><strong>Información Adicional:</strong></p>
         <ul>
           <li>Actividades complementarias como concursos y competencias</li>
           <li>Espacio para desarrollo físico y relaciones interpersonales</li>
         </ul>
-
         <p><strong>Recomendaciones:</strong></p>
         <ul>
           <li><strong>Inscripción oportuna:</strong> Para organización de equipos</li>
@@ -555,7 +532,6 @@
           <li><strong>Precalentamiento:</strong> Previene lesiones musculares</li>
           <li><strong>Juego limpio:</strong> Respeto a compañeros y oponentes</li>
         </ul>
-        
         <p><em>Se requiere inscripción previa para armar los equipos.</em></p>
       </div>
       <div class="modal-footer">
@@ -571,7 +547,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title">Taller de Liderazgo</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
@@ -583,13 +559,11 @@
           comunidad. Aprenderás técnicas y estrategias para liderar con eficacia 
           y servir mejor a los demás.
         </p>
-
         <p><strong>Información Adicional:</strong></p>
         <ul>
           <li>Combinación de teoría y prácticas con casos reales</li>
           <li>Facilitadores con experiencia en liderazgo comunitario</li>
         </ul>
-
         <p><strong>Recomendaciones:</strong></p>
         <ul>
           <li><strong>Participación activa:</strong> Interactúa con las dinámicas</li>
@@ -597,7 +571,6 @@
           <li><strong>Networking:</strong> Conecta con otros participantes</li>
           <li><strong>Aplicación práctica:</strong> Implementa lo aprendido</li>
         </ul>
-        
         <p><em>Materiales y refrigerio incluidos.</em></p>
       </div>
       <div class="modal-footer">
