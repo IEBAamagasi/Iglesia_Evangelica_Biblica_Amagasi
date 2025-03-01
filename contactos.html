@@ -211,20 +211,19 @@
 </div>
 </section>
 
-<!-- Añade EmailJS SDK -->
+
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
 <script>
-  // Inicializa EmailJS con tu clave pública
+
   (function() {
     emailjs.init('vs1IwlOMFV1MOaMhc');
   })();
 
-  // Maneja el envío del formulario
+ 
   document.getElementById('form').addEventListener('submit', function(e) {
     e.preventDefault();
     
-    // Cambia el texto del botón durante el envío
     const btn = document.getElementById('button');
     btn.value = 'Enviando...';
     
@@ -243,7 +242,7 @@
   });
 </script>
 
-<!-- Mapa interactivo mejorado -->
+
 <div class="container-fluid p-0 map-outer">
     <div class="map-container position-relative">
         <iframe
@@ -268,7 +267,6 @@
     </div>
 </div>
 
-<!-- Estilos (puedes dejarlos tal cual estaban) -->
 <style>
 :root {
     --map-height-desktop: 560px;
@@ -359,9 +357,6 @@
     }
 }
 </style>
-
-
-
 
 		
    <section class="ftco-section-parallax">
